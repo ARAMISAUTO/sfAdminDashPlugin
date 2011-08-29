@@ -337,7 +337,8 @@ font-style: italic;
 /*sf_admin_theme_plugin styles*/
 #sf_admin_theme_header
 {
-  background: url(../images/header_bg.png) repeat-x;
+  /*background: url(../images/header_bg.png) repeat-x;*/
+  background-color: #F1F3F5;
   border-bottom: #C64934 4px solid;
   margin: 0;
   padding: 0;
