@@ -20,7 +20,9 @@ else:
 
 if ($sf_user->isAuthenticated()): ?> 
   <div id='sf_admin_theme_header'>
-    <a href='<?php echo url_for(sfAdminDash::getProperty('dashboard_url')); ?>'><?php echo image_tag(sfAdminDash::getProperty('web_dir').'/images/header_logo.gif', array('alt' => 'Home', 'width' => '100')); ?></a>
+    <a class='dashtitle' href='<?php echo url_for(sfAdminDash::getProperty('dashboard_url')); ?>'>
+     <?php echo sfAdminDash::getProperty('project_name') . ' : ' . '<strong>' . sfAdminDash::getProperty('site') . '</strong>'; ?>
+    </a>
   </div>
 
   <div id='sf_admin_menu'>    
